@@ -9,7 +9,6 @@ def total_salary(path):
                 parts = line.strip().split(',')
                     
                 if len(parts) == 2 and parts[1].isdigit():
-
                     total += int(parts[1])
                     count += 1
             
@@ -18,7 +17,6 @@ def total_salary(path):
                 return (0,0)
 
             avg = total/count
-
             return (total , avg)
 
     except FileNotFoundError:
@@ -26,6 +24,6 @@ def total_salary(path):
         return (0,0)
 
 
-g = total_salary('hm1.txt')
+g = total_salary('hm1/hm1.txt')
 
 print(g)
